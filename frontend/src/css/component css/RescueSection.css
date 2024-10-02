@@ -1,0 +1,35 @@
+.rescue-section{
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.rescue-section-left{
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+.rescue-section-left h2{
+    color: var(--orange);
+}
+.rescue-section-left .btn-a{
+    margin-top: 1rem;
+}
+.rescue-section-right img{
+    width: 350px;
+}
+
+
+@media screen and (max-width:800px) {
+   .rescue-section{
+    flex-wrap: wrap;
+    gap: 2rem;
+   }
+}
+@media screen and (max-width:500px) {
+    .rescue-section-right img{
+        width: 270px;
+    }
+}

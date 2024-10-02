@@ -1,0 +1,46 @@
+.donation-section{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.donation-section-left{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    max-width: 550px;
+}
+.donation-section-left h3{
+    font-size: 2rem;
+}
+.donation-section-left h3 span{
+    color: var(--orange);
+    font-weight: 600;
+}
+.donation-section-left h1{
+    color: var(--orange);
+    font-size: 5rem;
+}
+.donation-section-left h4{
+    font-weight: 500;
+}
+.donation-section-right img{
+    width: 400px;
+}
+
+
+@media screen and (max-width:800px) {
+    .donation-section{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:600px) {
+    .donation-section-right img{
+        width: 260px;
+    }
+}
+@media screen and (max-width:500px) {
+    .donation-section-left h1{
+        font-size: 3.7rem;
+    }
+}

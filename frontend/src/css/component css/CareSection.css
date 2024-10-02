@@ -1,0 +1,43 @@
+.care-section{
+    margin-top: 4rem;
+    padding: 4rem 2rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+.care-section-left{
+    max-width: 550px;
+}
+.care-section-left h2{
+    color: var(--orange);
+}
+.care-section-left .care-form{
+    margin-top: 1rem;
+}
+.care-form{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.care-section-left h3:nth-child(5){
+    margin-top: 2rem;
+    font-size: 1rem;
+    color:#f24d5d;
+}
+.care-section-right img{
+    width: 400px;
+}
+
+
+@media screen and (max-width:850px) {
+    .care-section{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:500px) {
+    .care-section-right img{
+        width: 270px;
+    }
+}
