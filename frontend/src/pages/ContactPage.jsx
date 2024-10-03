@@ -12,7 +12,7 @@ export default function ContactPage() {
     }
     const handleSubmit = async(e) => {
         e.preventDefault()
-        const response = await fetch("https://animal-welfare-backend.onrender.com/query" , {
+        const response = await fetch("http://localhost:8000/query" , {
             method : 'POST',
             headers:{
                 'content-type':'application/json'
