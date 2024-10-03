@@ -5,11 +5,17 @@ import ParallaxSection from '../components/ParallaxSection'
 import RescueSection from '../components/RescueSection'
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
 export default function ContactPage() {
+    {/*CONTACT FORM DATA IS STORED WITH THE HELP OF THIS USESTATE HOOK*/}
     const [formData , setFormData] = useState({name:"" , contact:"" , email:"" , queryType:"" , query:""})
+
+    {/*CHECKING WHETHER THE FORM IS SUBMITTED OR NOT*/}
     const [isSuccess , setIsSuccess] = useState(false)
+
+    {/*HANDLING INPUT CHANGE IN CONTACT FORM INPUT FIELD*/}
     const handleChange = (e) => {
         setFormData({...formData , [e.target.name]:e.target.value});
     }
+    {/*HANDLING SUBMISSION OF CONTACT FORM*/}
     const handleSubmit = async(e) => {
         e.preventDefault()
         const response = await fetch("http://localhost:8000/query" , {
@@ -28,13 +34,16 @@ export default function ContactPage() {
     const closeDialogBox = () => {
         setIsSuccess(false)
     }
+    {/*Use to scroll the page to top whenever user visit the page*/}
     useEffect(() => {
         window.scrollTo(0,0)
     } , [])
   return (
     <div className='contact-page'>
+    {/*CONTACT PAGE LANDING SECTION*/}
         <div className="contact-page-landing-section">
                 <div className="contact-page-landing-section-main-left">
+                    {/*CONTACT FORM*/}
                     <form method='POST' className='contact-form' onSubmit={handleSubmit}>
                         <h3>Connect With Us!</h3>
                         <div className="row">
@@ -76,6 +85,7 @@ export default function ContactPage() {
                     <h1>24/7</h1>
                     <p>At Animal Welfare, we understand that emergencies can happen at any time. That’s why our dedicated team is available 24/7 to respond to urgent animal rescue situations. Whether it’s an injured animal in need or a rescue situation, we're here to help whenever you need us. Your call can make a difference in saving a life!</p>
                 </div>
+                {/*THIS SCREEN WILL BE DISPLAYED ONLY WHEN THE FORM IS SUBMITTED BY THE USER*/}
                 {isSuccess && <div className="form-submit-screen">
                     <div className="form-submit-box">
                         <TaskAltIcon id="tickIcon"/>

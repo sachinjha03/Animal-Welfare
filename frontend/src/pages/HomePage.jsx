@@ -18,11 +18,13 @@ import DonationSection from '../components/DonationSection'
 import RescueSection from '../components/RescueSection'
 import { Link } from 'react-router-dom'
 export default function HomePage() {
+     {/*Use to scroll the page to top whenever user visit the page*/}
     useEffect(() => {
         window.scrollTo(0,0)
     } , [])
   return (
     <div className='home-page'>
+        {/* LANDING SECTION OF HOME PAGE */}
         <div className="home-page-landing-section">
             <div className="home-page-landing-section-content">
                 <h3>Hello Humans,</h3>
@@ -31,6 +33,7 @@ export default function HomePage() {
                 <a href="#homePageAboutSection" className="btn-a flex-btn">Explore About Us <img src={btn} alt="" /></a>
             </div>
         </div>
+        {/*ABOUT US SECTION OF HOME PAGE*/}
             <div className="home-page-about-section" id='homePageAboutSection'>
                 <div className="home-page-about-section-left">
                     <h3>What We Do At</h3>
@@ -42,6 +45,7 @@ export default function HomePage() {
                     <img src={aboutImage} alt="" />
                 </div>
             </div>
+            {/*THIS SECTION REPRESENTS HOW MUCH THINGS WE HAVE DONE IN OUR JOURNEY*/}
             <div className="home-page-offer-section">
                 <div className="colorful-card">
                     <h3>500+</h3>
@@ -60,6 +64,7 @@ export default function HomePage() {
                     <p>Our dedicated volunteers have logged over 500 hours, contributing their time and energy to help care for animals in need.</p>
                 </div>
             </div>
+            {/*ADOPTION SECTION THAT SHOWCASES ADORABLE PETS THAT CAN BE ADOPTED*/}
             <div className="home-page-adopt-section">
                 <div className="adopt-section-top">
                     <h3>Can You Pleaseee</h3>

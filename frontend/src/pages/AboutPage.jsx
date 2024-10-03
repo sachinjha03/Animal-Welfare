@@ -8,11 +8,13 @@ import weDoneSectionImage from "../images/about/we done section.jpg"
 import GallerySection from '../components/GallerySection';
 import CareSection from '../components/CareSection';
 export default function AboutPage() {
+     {/*Use to scroll the page to top whenever user visit the page*/}
     useEffect(() => {
         window.scrollTo(0,0)
     } , [])
   return (
     <div className='about-page'>
+        {/*LANDING SECTION OF ABOUT PAGE*/}
         <div className="about-page-landing-section">
             <div className="about-page-landing-section-left">
                 <h3>Hello Again Humans,</h3>
@@ -24,6 +26,7 @@ export default function AboutPage() {
                 <img src={landingSectionImage} alt="" />
             </div>
         </div>
+        {/*OUR GOALS SECTION*/}
         <div className="our-goal-section" id='ourGoalSection'>
             <div className="our-goal-section-left">
                 <img src={goalSectionImage} alt="" />
@@ -36,6 +39,7 @@ export default function AboutPage() {
             </div>
         </div>
         <ParallaxSection/>
+        {/*"WHAT WE HAVE DONE" SECTION*/}
         <div className="we-done-section">
             <div className="we-done-section-left">
                 <h3>Let's Look At</h3>
