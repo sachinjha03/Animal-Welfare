@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Footer() {
   return (
     <div className='footer'>
+      {/*FOOTER OF WEBSITE*/}
       <div className="footer-top">
         <div className="footer-top-left">
             <h3>Every Animal Deserves Love</h3>
@@ -32,6 +33,7 @@ export default function Footer() {
             <a href="tel:+918742920558" className="btn-a flex-btn">Call For Appointment <img src={logo} alt="" /></a>
         </div>
       </div>
+      {/*GIVING CREDIT TO MYSELF FOR DESIGNING AND */}
       <div className="footer-credit">
         <h4>This website is designed & developed by <a href="https://www.sachinjha.online" target='_blank'>Sachin Jha | &copy;</a></h4>
       </div>

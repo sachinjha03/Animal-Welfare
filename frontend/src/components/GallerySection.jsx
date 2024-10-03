@@ -15,6 +15,7 @@ import image12 from "../images/about/gallery/gallery12.jpg"
 export default function GallerySection() {
   return (
     <div className='gallery-section'>
+      {/*Gallery section of the website*/}
         <img src={image1} alt="" />
         <img src={image2} alt="" />
         <img src={image3} alt="" />

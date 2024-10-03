@@ -5,6 +5,7 @@ import donation from "../images/home/donation.png"
 export default function DonationSection() {
     return (
         <div className="donation-section">
+            {/*DONATION SECTION CODE WITH EASY-TO-USE QR , SO THAT THERE WILL BE NO CONSTRAINT OF MINIMUM PAY OR DEBIT/CREDIT CARD LONG PROCEDURE*/}
             <div className="donation-section-left">
                 <h3>Want to help us but <span> don't have space</span> to take care ?</h3>
                 <h1>Donate for us</h1>

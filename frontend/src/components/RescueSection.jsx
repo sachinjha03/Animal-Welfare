@@ -5,6 +5,7 @@ import rescueImage from "../images/home/rescue.png"
 export default function RescueSection() {
     return (
         <div className="rescue-section">
+            {/*RESCUE SECTION CODE WITH EMERGENCY CALLING BUTTON*/}
             <div className="rescue-section-left">
                 <h3>We Provide</h3>
                 <h2>ANIMAL RESCUE</h2>

@@ -3,11 +3,16 @@ import "../css/component css/CareSection.css"
 import care from "../images/home/care.png"
 import locations from "../api/locations.json"
 export default function CareSection() {
+    {/*VALUE OF ENTERED CITY WILL BE STORED WITH THIS USESTATE HOOK*/}
     const [searchData , setSearchData] = useState({city:""})
     const [provideService , setProvideService] = useState(null);
+
+    {/*CHANGES IN INPUT WILL BE HANDLED BY THIS FUNCTION*/}
     const handleChange = (e) => {
         setSearchData({...searchData ,[e.target.name]: e.target.value})
     }
+    
+    {/*SUBMISSION OF INPUT FORM WILL BE HANDLED BY THIS FUNCTION*/}
     const handleSubmit = (e) => {
         e.preventDefault()
         let isTrue = false;
@@ -25,6 +30,7 @@ export default function CareSection() {
     }
     return (
         <div className="care-section">
+            {/*ANIMAL SPECIALIST SECTION TO SEARCH IF WE PROVIDE SERVICE IN THE ENTERED CITY BY USER OR NOT*/}
             <div className="care-section-left">
                 <h3>Are you searching for</h3>
                 <h2>Animal Specialist ?</h2>
