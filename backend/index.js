@@ -14,6 +14,7 @@ app.get("/" , (req,res) => {
 
 app.use(require("./routes/Query"))
 
+//will reflect whether the backend is started or not
 app.listen(port , () => {
     console.log("Backend Started");
 })

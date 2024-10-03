@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const query = require("../models/query");
 
-
+//post request created to submit form data to database
 router.post("/query" , async(req,res) => {
     try{
         const addQuery = new query({

@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-
+//Schema and model for contact form data
 const querySchema = new mongoose.Schema({
     name:String,
     contact : Number,
